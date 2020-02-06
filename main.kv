@@ -5,5 +5,23 @@
 
 <Inicio>:
     BoxLayout:
-        Label:
-            text: 'Hello, World'
+        canvas:
+            Color:
+                rgba: 0,0,0.3,1
+            Rectangle:
+                size: self.size
+                pos: self.pos
+        orientation: 'vertical'
+        ActionBar:
+            background_image: ''
+            background_color: 0,0,0,0
+            ActionView:
+                background_image: ''
+                background_color: 0,0,0,0
+                ActionPrevious:
+                    app_icon: ''
+                    previous_image: ''
+                    with_previous: False
+                ActionButton:
+                    text: '?'
+        Widget:
